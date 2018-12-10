@@ -124,7 +124,7 @@ a:hover{color: var(--lightPink)};
 /*Headings*/
 h1{font-size: 45px;}
 h2{font-size: 35px;}
-h3{font-size: 30px;}
+
 h4{font-size: 20px;}
 h5{font-size: 15px;height: 1px;}
 h6{font-size: 10px;}
@@ -405,7 +405,7 @@ footer a{color: white; font-size:12px }
 }
 .cf-01{
   grid-column: 1/span 3;
-  background-color: var(--greyish);
+  background-color: var(--darkPink);
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding: 40px 0px 0px 50px;
@@ -446,3 +446,5 @@ footer a{color: white; font-size:12px }
   width: 100%;
   height: 100%;
 }
+
+/*Categories page*/
