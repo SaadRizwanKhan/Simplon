@@ -38,7 +38,8 @@ main {
   transition: all .2s;
 }
 .cd-add-to-cart:hover {
-  background: #42a2e1;
+  background: #facbd9;
+  color: #878387;
 }
 .cd-add-to-cart:active {
   -webkit-transform: scale(0.9);
