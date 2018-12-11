@@ -16,6 +16,34 @@ forms:
     --greyish: #878387; /*rgba(135, 131, 135, 1)*/
 }
 
+
+#ShopAddCart h2, #ShopAddCart h3, #ShopAddCart h4,
+ #ShopAddCart h5, #ShopAddCart h6,#ShopAddCart  p,
+ #ShopAddCart pre,#ShopAddCart acronym,#ShopAddCart address,
+ #ShopAddCart big,#ShopAddCart cite,#ShopAddCart code,
+ #ShopAddCart em, #ShopAddCart img, #ShopAddCart q,#ShopAddCart s,#ShopAddCart samp,
+ #ShopAddCart small, strike, strong, sub, sup, tt, var,
+ #ShopAddCart b,#ShopAddCart u,#ShopAddCart i,#ShopAddCart center,
+ #ShopAddCart dl,#ShopAddCart dt,#ShopAddCart  dd, #ShopAddCart ol, #ShopAddCart ul, #ShopAddCart li,
+#ShopAddCart fieldset, #ShopAddCart form, #ShopAddCart label, #ShopAddCart legend,
+#ShopAddCart table, #ShopAddCart caption, #ShopAddCart tbody, #ShopAddCart tfoot, #ShopAddCart thead, #ShopAddCart tr, #ShopAddCart th, #ShopAddCart td,
+#ShopAddCart article, #ShopAddCart aside, #ShopAddCart canvas, #ShopAddCart details, #ShopAddCart embed, 
+#ShopAddCart figure,#ShopAddCart  figcaption, #ShopAddCart footer, #ShopAddCart header, #ShopAddCart hgroup, 
+#ShopAddCart menu,#ShopAddCart  nav, #ShopAddCart output, #ShopAddCart ruby, #ShopAddCart section, #ShopAddCart summary,
+#ShopAddCart time, #ShopAddCart mark, #ShopAddCart audio, #ShopAddCart video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.product-details ol, ul {
+	list-style: none;
+}
+
+
 /*Hover Effects*/
 .hvr-grow {
   display: inline-block;
