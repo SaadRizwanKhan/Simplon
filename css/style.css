@@ -398,7 +398,7 @@ footer a{color: white; font-size:12px }
 /*footer sends*/
 
 /*Trending section*/
-#Component04{padding:50px}
+#Component04{padding:50px;text-align: center}
 .probox{
   border-radius: 7px;
   padding: 20px;
@@ -475,4 +475,38 @@ footer a{color: white; font-size:12px }
   height: 100%;
 }
 
-/*Categories page*/
+/*Single product page*/
+
+#C08-box01{
+  width: 90%;
+  box-shadow: 12px 15px 28px grey;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.price{
+  color: var(--darkPink);
+  font-size: 34px;
+  font-weight: 900;  
+}
+.price-tag{color:var(--greyish)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
