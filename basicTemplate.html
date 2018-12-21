@@ -4,15 +4,19 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Simplons Beauty Care</title>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--CDNs-->
     <link href="https://fastcdn.org/Animate.css/3.4.0/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"> 
     <!--My Style-->
+    
     <link rel="stylesheet" type="text/css" href="css/addToCart.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
+    
     
 </head>
 <body>
@@ -240,73 +244,105 @@
     </nav>
     <!--Banner--> 
     <Section class="bannerMain imgCover"></Section>
-
-    <footer class="grid is-just-cont-c is-align-cont-s">
-        <div class="grid is-just-cont-c txt-cen">
-             <h3>SUBSCRIBE FOR NEWSLETTER</h3>
-             <small style="margin-bottom:14px;">Get all the latest news and offers from the fashion industry delivered straight to your email</small>
-             <div class="grid is-col is-align-itm-c" style="grid-gap:5px;padding:2px 30px;">
-                 <input type="text" class="form-design">
-                 <button class="btn hvr-pulse-shrink">Subscribe</button>
-             </div>
+  <!--Add to cart starts-->
+  <Section id="ShopAddCart">
+    
+    <div class="cd-cart-container empty">
+      <a href="#0" class="cd-cart-trigger">
+        <ul class="count"> <!-- cart items count -->
+          <li>0</li>
+          <li>0</li>
+        </ul> <!-- .count -->
+      </a>
+    
+      <div class="cd-cart">
+        <div class="wrapper">
+          
+          <Section style="padding: 20px; border-bottom: 1px solid #878387" class="theHeader">
+            <h2 style="padding-bottom: 5px">Cart</h2>
+            <span style="padding-bottom: 5px" class="undo">Item removed. <a href="#0">Undo</a></span>
+          </Section>
+          
+          <div class="theBoxOfItm" style="padding:20px">
+            <ul>
+              <!-- products added to the cart will be inserted here using JavaScript -->
+            </ul>
+          </div>
+    
+          <div id="foot">
+            <a href="#0" class="checkout"><em>Checkout - $<span style="margin-right:50px">0</span></em></a>
+          </div>
         </div>
-          <!--flinks and icons section below-->
-        <Section class="grid is-col-4 gap-4 is-just-itm-c" style="width:100%">
-            <div class="grid is-align-itm-s">
-              <h5>VISONARY</h5>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sed dolorem aspernatur doloribus animi consequuntur placeat itaque rerum. Porro at illo quaerat quibusdam, explicabo perferendis est. Culpa deserunt neque necessitatibus!</P>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sed dolorem aspernatur doloribus animi consequuntur placeat itaque rerum.</P>
-  
-            </div>
-            <div class="grid">
-              <h5>KEEP IN TOUCH</h5>
-              <small>
-                <a href="#">
-                  <i class="fas fa-map-marked-alt"></i> &nbsp;&nbsp;A-57 Society Office street 4, Karachi
-                </a>
-              </small>
-              <small>
-                <a href="#">
-                  <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; 090078601
-                </a>
-              </small>
-              <small>
-                <a href="#">
-                  <i class="fas fa-envelope"></i>&nbsp;&nbsp; info@simplons.com
-                </a>
-              </small>
-              <small>
-                <a href="#">
-                  <i class="fas fa-globe"></i> &nbsp;&nbsp;www.simplons.com
-                </a>
-              </small>
-            </div>
-            <div class="grid">
-              <h5>INSTAGRAM FOLLOW</h5>
-              <Section id="instagram" class="grid is-col-3 gap-1">
-                <div><img src="images/home/insta01.png" width="100%"></div>
-                <div><img src="images/home/insta02.png" width="100%"></div>
-                <div><img src="images/home/insta03.png" width="100%"></div>
-                <div><img src="images/home/insta04.png" width="100%"></div>
-                <div><img src="images/home/insta05.png" width="100%"></div>
-                <div><img src="images/home/insta06.png" width="100%"></div>
-                
-              </Section>
-            </div>
-            <div class="grid">
-              <h5>RELATED LINKS</h5>
-              <a href="#">About us</a>
-              <a href="#">What we do</a>
-              <a href="#">What we think</a>
-              <a href="#">Locations</a>
-              <a href="#">Sitemap</a>
-            </div>
-        </Section>
-      </footer>
-  
-    </div>
+      </div> <!-- .cd-cart -->
+    </div> <!-- cd-cart-container -->
+      </Section>
+    <!--Add to cart ends-->
+    <footer class="grid is-just-cont-c is-align-cont-s">
+      <div class="grid is-just-cont-c txt-cen">
+           <h3>SUBSCRIBE FOR NEWSLETTER</h3>w
+           <small style="margin-bottom:14px;">Get all the latest news and offers from the fashion industry delivered straight to your email</small>
+           <div class="grid is-col is-align-itm-c" style="grid-gap:5px;padding:2px 30px;">
+               <input type="text" class="form-design">
+               <button class="btn hvr-pulse-shrink">Subscribe</button>
+           </div>
+      </div>
+        <!--flinks and icons section below-->
+      <Section class="grid is-col-4 gap-4 is-just-itm-c" style="width:100%">
+          <div class="grid is-align-itm-s">
+            <h5>VISONARY</h5>
+            <P>Makeup artist. Photographer. Iconoclast. Creative visionary Zubaida Appa launched Simplons Cosmetics with 12 cult-favorite lipsticks in 1994, inspiring self-expression, creativity, and artistry with uncompromising pigment purity and imaginative color.</P>
+            <P> Today, Simplons boundary-pushing approach manifests from the pigments to the products to the photographed campaigns, shot by Zubiada Appaa herself—bringing high-fashion, high-style, and forward thinking to beauty.</P>
+            
 
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
-  </body>
-  </html>
+          </div>
+          <div class="grid">
+            <h5>KEEP IN TOUCH</h5>
+            <small>
+              <a href="#">
+                <i class="fas fa-map-marked-alt"></i> &nbsp;&nbsp;A-57 Society Office street 4, Karachi
+              </a>
+            </small>
+            <small>
+              <a href="#">
+                <i class="fas fa-mobile-alt"></i>&nbsp;&nbsp; 090078601
+              </a>
+            </small>
+            <small>
+              <a href="#">
+                <i class="fas fa-envelope"></i>&nbsp;&nbsp; info@simplons.com
+              </a>
+            </small>
+            <small>
+              <a href="#">
+                <i class="fas fa-globe"></i> &nbsp;&nbsp;www.simplons.com
+              </a>
+            </small>
+          </div>
+          <div class="grid">
+            <h5>INSTAGRAM FOLLOW</h5>
+            <Section id="instagram" class="grid is-col-3 gap-1">
+              <div><img src="images/home/insta01.png" width="100%"></div>
+              <div><img src="images/home/insta02.png" width="100%"></div>
+              <div><img src="images/home/insta03.png" width="100%"></div>
+              <div><img src="images/home/insta04.png" width="100%"></div>
+              <div><img src="images/home/insta05.png" width="100%"></div>
+              <div><img src="images/home/insta06.png" width="100%"></div>
+            </Section>
+          </div>
+          <div class="grid">
+            <h5>RELATED LINKS</h5>
+            <a href="About.html">About us</a>
+            <a href="About.html">What we do</a>
+            <a href="About.html">What we think</a>
+            <a href="storeLocation.html">Locations</a>
+            <a href="sitemap.html">Sitemap</a>
+          </div>
+      </Section>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

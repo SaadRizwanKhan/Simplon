@@ -247,13 +247,17 @@ h6{font-size: 10px;}
   background-size: contain;
   background-repeat: no-repeat
 }
-
-.bannerMain{
+/*banners*/
+.bannerMain,.bannerMainHair,.bannerMainSkin,.bannerMainAcc{
     background-image: url(../images/banners/Banner.jpg);
     width:100%;
     height:450px;
     margin-top:48px;
 }
+.bannerMainHair{background-image: url(../images/categories/hairColor/Metallics_Pro_Desktop_Banner.jpg);}
+.bannerMainSkin{background-image: url(../images/categories/eyeshadow/170914165620-Website-Velvet-Lips-Banner-1.jpg);}
+.bannerMainAcc{background-image: url(../images/jewellery/57eb20540a4abc438f631b36f0ad2d7b.jpg);}
+/*banners end*/
 
 .logo{background-image: url(../images/logo/logo02.jpg);width:124px;height: 45px;}
 
@@ -491,7 +495,7 @@ footer a{color: white; font-size:12px }
 }
 .price-tag{color:var(--greyish)}
 
-
+#Component-08{margin-top: 5%;}
 
 
 
