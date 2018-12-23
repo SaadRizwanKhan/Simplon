@@ -2,7 +2,8 @@ jQuery(document).ready(function($){
 	var cartWrapper = $('.cd-cart-container');
 	//product id - you don't need a counter in your real project but you can use your real product id
 	var productId = 0;
-
+	
+	
 	if( cartWrapper.length > 0 ) {
 		//store jQuery objects
 		var cartBody = cartWrapper.find('.theBoxOfItm')
@@ -13,7 +14,7 @@ jQuery(document).ready(function($){
 		var addToCartBtn = $('.cd-add-to-cart');
 		var undo = cartWrapper.find('.undo');
 		var undoTimeoutId;
-
+		
 		//add product to cart
 		addToCartBtn.on('click', function(event){
 			event.preventDefault();
@@ -77,22 +78,23 @@ jQuery(document).ready(function($){
 	function addToCart(trigger) {
 		var cartIsEmpty = cartWrapper.hasClass('empty');
 		//update cart product list
-		addProduct();
+		addProduct(trigger.data('price'));//saad did this :-D awesomely!
 		//update number of items 
 		updateCartCount(cartIsEmpty);
 		//update total price
 		updateCartTotal(trigger.data('price'), true);
 		//show cart
 		cartWrapper.removeClass('empty');
+		
 	}
 
-	function addProduct() {
+	function addProduct(p) {
 		//this is just a product placeholder
 		//you should insert an item with the selected product info
 		//replace productId, productName, price and url with your real product info
 		productId = productId + 1;
-		var price = 25;
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="images/product-preview.png" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">productName</a></h3><span class="price">'+price+'</span><div class="actions"><a href="#0" style="padding-top:5px" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
+		var myPrice = p;
+		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="images/product-preview.png" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">productName</a></h3><span class="price">'+myPrice+'</span><div class="actions"><a href="#0" style="padding-top:5px" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
 		cartList.prepend(productAdded);
 	}
 
@@ -167,5 +169,7 @@ jQuery(document).ready(function($){
 
 	function updateCartTotal(price, bool) {
 		bool ? cartTotal.text( (Number(cartTotal.text()) + Number(price)).toFixed(2) )  : cartTotal.text( (Number(cartTotal.text()) - Number(price)).toFixed(2) );
+		
+		
 	}
 });
