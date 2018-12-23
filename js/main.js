@@ -78,7 +78,7 @@ jQuery(document).ready(function($){
 	function addToCart(trigger) {
 		var cartIsEmpty = cartWrapper.hasClass('empty');
 		//update cart product list
-		addProduct(trigger.data('price'),trigger.data('name'));//saad did this :-D awesomely!
+		addProduct(trigger.data('price'),trigger.data('name'),trigger.data('img'));//saad did this :-D awesomely!
 		//update number of items 
 		updateCartCount(cartIsEmpty);
 		//update total price
@@ -88,14 +88,15 @@ jQuery(document).ready(function($){
 		
 	}
 
-	function addProduct(p,n) {
+	function addProduct(p,n,img) {
 		//this is just a product placeholder
 		//you should insert an item with the selected product info
 		//replace productId, productName, price and url with your real product info
 		productId = productId + 1;
 		var myPrice = p;
 		var myName = n;
-		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="images/product-preview.png" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">'+myName+'</a></h3><span class="price">$'+myPrice+'</span><div class="actions"><a href="#0" style="padding-top:5px" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
+		var myImg = img;
+		var productAdded = $('<li class="product"><div class="product-image"><a href="#0"><img src="'+myImg+'" alt="placeholder"></a></div><div class="product-details"><h3><a href="#0">'+myName+'</a></h3><span class="price">$'+myPrice+'</span><div class="actions"><a href="#0" style="padding-top:5px" class="delete-item">Delete</a><div class="quantity"><label for="cd-product-'+ productId +'">Qty</label><span class="select"><select id="cd-product-'+ productId +'" name="quantity"><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option></select></span></div></div></div></li>');
 		cartList.prepend(productAdded);
 	}
 

@@ -361,7 +361,7 @@ Main Components
   overflow: hidden;
   padding: 0 1.4em;
   position: relative;
-  padding-bottom: 90px;
+  padding-bottom: 190px;
   font-size: 12px;
 }
 .cd-cart .theBoxOfItm li {
@@ -396,6 +396,7 @@ Main Components
           animation: cd-item-slide-out .3s forwards;
   font-size: 12px;
 }
+.cd-cart .theBoxOfItm li:nth-last-child(1){margin-bottom: 100px !important;}
 .cd-cart .theBoxOfItm li.deleted.undo-deleted {
   /* used to reinsert an item deleted from the cart when user clicks 'Undo' */
   -webkit-animation: cd-item-slide-in .3s forwards;
